@@ -1,106 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <title>Marketing Dashboard Pro</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Marketing Agency</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <header>
-        <h1>📊 Marketing Dashboard Pro</h1>
-        <nav>
-            <button onclick="switchPage('home')">Home</button>
-            <button onclick="switchPage('campaigns')">Campaigns</button>
-            <button onclick="switchPage('analytics')">Analytics</button>
-            <button onclick="switchPage('leads')">Leads</button>
-            <button onclick="switchPage('reports')">Reports</button>
-            <button id="themeToggle">🌗</button>
-        </nav>
-    </header>
+  <header>
+    <h1>BrightReach Marketing</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main>
-        <section id="home" class="page">
-            <h2>📌 Overview</h2>
-            <div class="stats">
-                <div class="card">
-                    <h3>Clicks</h3>
-                    <p id="clicks">0</p>
-                </div>
-                <div class="card">
-                    <h3>Conversions</h3>
-                    <p id="conversions">0</p>
-                </div>
-                <div class="card">
-                    <h3>Reach</h3>
-                    <p id="reach">0</p>
-                </div>
-            </div>
-            <button onclick="alert('Syncing data...')">🔄 Sync Stats</button>
-        </section>
+  <section class="hero">
+    <h2>Grow Your Business with Us</h2>
+    <p>We help brands reach their audience through smart digital strategies.</p>
+    <a href="services.html" class="btn">Explore Services</a>
+  </section>
 
-        <section id="campaigns" class="page hidden">
-            <h2>🎯 Create Campaign</h2>
-            <form id="campaignForm">
-                <input type="text" placeholder="Campaign Title" required />
-                <input type="number" placeholder="Budget ₹" required />
-                <select required>
-                    <option disabled selected>Select Goal</option>
-                    <option>Leads</option>
-                    <option>Sales</option>
-                    <option>Branding</option>
-                </select>
-                <textarea placeholder="Campaign Details" required></textarea>
-                <input type="date" required />
-                <input type="file" />
-                <button type="submit">🚀 Launch</button>
-                <button type="reset">🔄 Reset</button>
-            </form>
-            <p id="formMessage"></p>
-        </section>
-
-        <section id="analytics" class="page hidden">
-            <h2>📈 Analytics Dashboard</h2>
-            <canvas id="engagementChart"></canvas>
-            <button onclick="switchPage('reports')">📤 View Reports</button>
-        </section>
-
-        <section id="leads" class="page hidden">
-            <h2>📬 Capture Leads</h2>
-            <form id="leadForm">
-                <input type="email" placeholder="Email address" required />
-                <select required>
-                    <option disabled selected>Segment</option>
-                    <option>Agency</option>
-                    <option>Business</option>
-                    <option>Freelancer</option>
-                </select>
-                <button type="submit">💌 Subscribe</button>
-            </form>
-            <p id="leadMessage"></p>
-        </section>
-
-        <section id="reports" class="page hidden">
-            <h2>📄 Campaign Reports</h2>
-            <button onclick="exportPDF()">🖨 Export PDF</button>
-            <button onclick="exportCSV()">📊 Export CSV</button>
-            <button onclick="switchPage('home')">🔙 Back to Dashboard</button>
-        </section>
-        <section class="services">
-            <h2>🌟 Our Services</h2>
-            <ul>
-                <li>💻 Web Designing</li>
-                <li>📈 Digital Marketing</li>
-                <li>📝 Content Writing</li>
-                <li>🧠 Digital Consulting</li>
-                <li>🎓 Education Consulting</li>
-            </ul></section>
-    </main>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 BrightReach Marketing</p>
+  </footer>
 </body>
-
 </html>
