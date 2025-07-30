@@ -1,68 +1,51 @@
-body {
-  font-family: Arial, sans-serif;
+body, html {
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+
+.background-overlay {
+  background: url('3409297.jpg') no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  color: white;
+  min-height: 100vh;
+  padding: 0;
 }
 
 header {
-  background: #333;
-  color: white;
+  background: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   text-align: center;
 }
 
 nav a {
   margin: 0 1rem;
-  color: white;
+  color: #00ffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .hero {
-  padding: 2rem;
   text-align: center;
-  background: #0077cc;
-  color: white;
+  padding: 5rem 2rem;
 }
 
 .btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: white;
-  color: #0077cc;
+  background: #00ffff;
+  color: black;
+  padding: 0.7rem 1.5rem;
   text-decoration: none;
-  margin-top: 1rem;
-}
-
-.services {
-  display: flex;
-  justify-content: space-around;
-  padding: 2rem;
-}
-
-.card {
-  background: white;
-  padding: 1rem;
   border-radius: 5px;
-  width: 30%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.contact-form {
-  padding: 2rem;
-  max-width: 600px;
-  margin: auto;
-}
-
-form input, form textarea {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  font-weight: bold;
 }
 
 footer {
-  background: #333;
-  color: white;
+  background: rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
